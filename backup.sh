@@ -1,6 +1,6 @@
 #!/bin/bash
 # Backup automation script
-
+# Commit the second
 SOURCE_DIR=$1
 BACKUP_DIR=$2
 
