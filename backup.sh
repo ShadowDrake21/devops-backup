@@ -10,7 +10,7 @@ LOG_FILE="$LOG_FILE_PATH/$LOG_FILE_NAME.log"
 
 find "$LOG_FILE_PATH" -type f -name "*.log" -mmin +5 -exec rm -f {} \;
 
-echo "Accepting arguments: $SOURCE_DIR and $BACKUP_DIR" >> $LOG_FILE
+echo "Accepting these arguments: $SOURCE_DIR and $BACKUP_DIR" >> $LOG_FILE
 
 tar -czf "$BACKUP_DIR/backup_$(date +%F_%H-%M).tar.gz" "$SOURCE_DIR"
 
